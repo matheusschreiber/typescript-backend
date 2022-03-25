@@ -12,6 +12,8 @@ class UserController {
 
   public async store(req:Request, res:Response): Promise<Response>{
     const  user = await User.create(req.body)
+    
+    console.log(user.fullName())
 
     return res.json(user)
   }

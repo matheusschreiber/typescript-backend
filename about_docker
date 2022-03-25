@@ -1,0 +1,6 @@
+For the docker container with the database, i'm using
+https://hub.docker.com/r/bitnami/mongodb
+
+docker pull bitnami/mongodb:latest
+docker run -d -p 27017:27017 -e AUTH=no bitnami/mongodb
+
